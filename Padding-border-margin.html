@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kẻ ô</title>
+        <meta charset="utf-8">
+        <style>
+            .box {
+                width: 60px;
+                height: 60px;
+                color:white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /* Đưa tất cả các ô về chiều ngang bên trái màn hình web */
+                float: left;
+            }
+            .box1 {
+                background-color: blue;
+                /* Margin 4 phía viết tắt */
+                margin: 30px;
+            }
+            .box2 {
+                background-color: red;
+                /* Tạo khoảng cách giữa các ô */
+                margin-top: 30px;
+            }
+            .box3 {
+                background-color:black;
+                /* Đệm thêm lớp đầu tiên cho box dày thêm */
+                padding: 30px;
+                /* Viền khung */
+                /* border-width: 5px;
+                border-color:chocolate;
+                border-style: solid; */
+                /* Hoặc là */
+                border: 5px solid chocolate;
+
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </body>
+</html>

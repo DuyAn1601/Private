@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Phần từ giả</title>
+        <meta charset="utf-8">
+        <style>
+            html,body {
+                margin 0;
+            }
+            .box{
+                width: 100%;
+                height: 120px;
+                background-color: saddlebrown;
+            }
+            
+            .box::after {
+                content: "";
+                display: block;
+                width: 50px;
+                height: 50px;
+                background-color: sienna;
+            }
+            h1::first-letter {
+                font-size: 60px;
+            }
+            h1::selection {
+                background-color: springgreen;
+                color:red;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="box"></div>
+        <h1>CSS phần tử giả</h1>
+        <ul>
+            <!-- Chọn phần tử đầu tiên -->
+            <li>::before</li>
+            <!-- Chọn phần tử cuối cùng -->
+            <li>::after</li>
+            <!-- Chọn chữ cái đầu tiên -->
+            <li>::first-letter</li>
+            <!-- chọn dòng đầu tiên -->
+            <li>::first-line</li>
+            <!-- Khi tô đậm nó lên đổi giao diện (màu, chữ,...) -->
+            <li>::selection</li>  
+        </ul>
+    </body>
+</html

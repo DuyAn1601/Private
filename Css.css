@@ -1,0 +1,36 @@
+#first-heading {
+    color: red;
+}
+
+.second-heading {
+    color:green;
+    font-size: 30;
+}
+
+/* Sử dụng Css universal độ ưu tiên yếu nhất */
+*{
+    color: blue;
+}
+
+/* Sử dụng Css inherited độ ưu tiên yếu nhất */
+html {
+    color: violet;
+}
+
+/* Sử dụng !important để tăng độ ưu tiên lên cao nhất */
+
+/* Sử dụng kỹ thuật đặt biến toàn cục thì đầu tiên tạo cái lớp giả */
+:root {
+    --mau: violet;
+}
+
+/* Gọi biến toàn cục  */
+h1 {
+    color: var(--mau);
+}
+
+/* Gọi biến cục bộ */
+h2{
+    --mau2: brown;
+    color: var(--mau2);
+}

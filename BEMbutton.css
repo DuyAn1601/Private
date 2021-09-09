@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Helvetica Neue";
+    background-color: #f4f4f5;
+  }
+  
+  /* Căn giữa màn hình */
+  body > div {
+    margin: auto;
+  }
+
+  /* Block */
+
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 15px 50px ;
+    /* Gọt góc thành tròn */
+    border-radius: 60px;
+    /* Hiện cursor khi mà di chuột vào nút */
+    cursor: pointer;
+    /* Tạo hiệu ứng cho cái sự làm mờ nút kh nhanh quá */
+    transition: opacity 0.2s linear;
+  }
+  
+  /* Làm mờ cái nút khi di chuột vào */
+  .btn:hover{
+      opacity: 0.8;
+  }
+
+  .btn + .btn{
+      margin-left: 16px;
+  }
+
+  .btn--success {
+      background-color: cadetblue;
+
+  }
+  
+  .btn--warn {
+    background-color: darkgoldenrod;
+  }
+
+  .btn--danger {
+    background-color: darkred;
+  }
+
+  /* Nút không sử dụng được */
+ .btn--disabled{
+    opacity: 0.4 !important;
+    cursor: default;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Position</title>
+        <meta charset="utf-8">
+        <style>
+            html,body {
+                margin 0;
+            }
+
+            h1 {
+                position: relative;
+                top : 100px;
+                left : 100px;
+            }
+            .box {
+                width:100%;
+                height: 120px;
+                background-color: black;
+                position: relative;
+            }
+            /* Tạo màn mờ mờ trong trang web */
+            .box-child {
+                background-color: rgba(255,255,255,0.5);
+                position: absolute;
+                top: 0;
+                right:0;
+                left: 0;
+                bottom: 0;
+            }
+
+            .header {
+                width :100%;
+                height : 120px;
+                background-color: tomato;
+                position: fixed;
+            }
+
+            ul {
+                height: 2000px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box"> 
+            <div class="box-child"></div>
+        </div>
+        <div class="header"></div>
+        <h1>Position</h1>
+        <ul>
+            <!-- Vị trí tương đối phụ thuộc vào chính nó -->
+            <!-- Nó đè lên chữ đã viết sẵn luôn -->
+            <li>Relative</li>
+            <!-- di chuyển đối tượng con xung quanh đối tượng cha -->
+            <!-- Đối tượng phụ thuộc vào đối tượng khác -->
+            <li>Absolute</li>
+            <!-- Sử dung khi phụ thuộc vào trình duyệt -->
+            <li>Fixed</li>
+            <li>Sticky</li>
+        </ul>
+    </body>
+</html>
